@@ -42,7 +42,7 @@ int main()
 
     string anotherString("This declaration works as well, along with {}");
 
-    cout << myString << endl << anotherString; // Can chain together this way, along with concat
+    cout << myString << endl << anotherString << endl; // Can chain together this way, along with concat
                         // endl effectively functions the same as \n, short for 'end line'
 
     // Constants can be assigned data types
@@ -60,7 +60,7 @@ int main()
 
     // Characters vs strings - similar to C#
     'x'; // Character
-    "x along is a character"; // String
+    "x alone is a character"; // String
 
     const char tab = '\t';
 
@@ -69,16 +69,45 @@ int main()
     float g = 3.1234;
     g = (int)g;
 
-    cout << endl << g << endl;
+    cout << g << endl;
 
     int s = sizeof(g); // returns size in bits
 
     cout << s << " bits" << endl;
 
+    int age;
+    cout << "Your age is: ";
+    cin >> age; 
+    cout << endl << "You have told me you are " << age << " years old." << endl;
+
+    int num1; int num2;
+
+    cout << "Enter num1 and num2: ";
+    cin >> num1 >> num2;
+    cout << "The sum is: " << num1 + num2 << endl;
+
+    string sampleLine;
+    getline(cin, sampleLine);
+    cout << "Your line was: " << sampleLine << endl;
+
+
     // Terminate program, good practice or necessary?
     return 0;
 
 }
+
+/*
+STREAM EXPLANATION 
+
+    A stream is specified, and the << places the data on the right side into the stream
+    that is specified on the left side. Examples above are with the cout (standard output stream)
+
+    You can use << to chain together variables and literals without needing to concat (though you still can)
+
+    The standard input (cin) is the keyboard in most environments. >> Instead used with inputs.
+    cin considers a string terminated when it sees white space, tabs, line breaks, etc. and getline must
+    be called instead.
+*/
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
