@@ -36,6 +36,29 @@ int main()
     myString = "This is a string";
     cout << myString + "\n"; // String concat possible with cout
 
+    string anotherString("This declaration works as well, along with {}");
+
+    cout << myString << endl << anotherString; // Can chain together this way, along with concat
+                        // endl effectively functions the same as \n, short for 'end line'
+
+    // Constants can be assigned data types
+    75; // integer
+    75u; // unsigned - meaning it is ONLY positive numbers
+    75l; // long - allows for more bytes?
+    75lu; 75ul; // Same statements - unsigned long
+    75ll; // long long - even bigger number
+
+    // Constants with float types
+    6.02e23l; // Saves as long double (same as double?)
+    3.1415f; // Saves a 'float' which is shorter than double
+        // Case sensitivity does not matter for "l" and "f"
+
+
+    // Characters vs strings - similar to C#
+    'x'; // Character
+    "x along is a character"; // String
+
+
     // Terminate program, good practice or necessary?
     return 0;
 
