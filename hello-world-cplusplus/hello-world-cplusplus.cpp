@@ -5,6 +5,10 @@
 #include <string> // string type must be included here!
 using namespace std;
 
+// Pre processor definitions can be used for constants
+#define NEWLINE '\n'
+#define PI 3.1415
+
 int main()
 {
     std::cout << "Hello World!\n";
@@ -58,6 +62,18 @@ int main()
     'x'; // Character
     "x along is a character"; // String
 
+    const char tab = '\t';
+
+    // Casting example, same to C#
+    int i;
+    float g = 3.1234;
+    g = (int)g;
+
+    cout << endl << g << endl;
+
+    int s = sizeof(g); // returns size in bits
+
+    cout << s << " bits" << endl;
 
     // Terminate program, good practice or necessary?
     return 0;
